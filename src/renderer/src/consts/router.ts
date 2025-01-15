@@ -1,10 +1,10 @@
-import { createBrowserRouter } from 'react-router'
+import { createHashRouter } from 'react-router'
 import App from '../App'
 import Dashboard from '../layouts/dashboard'
 import Settings from '../components/Settings'
 import PlexLibrary from '../components/PlexLibrary'
 
-const ROUTER = createBrowserRouter([
+const ROUTER = createHashRouter([
   {
     Component: App, // root layout route
     children: [
